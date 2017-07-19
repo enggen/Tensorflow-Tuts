@@ -1,4 +1,3 @@
-
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
@@ -33,7 +32,7 @@ ys = tf.placeholder(tf.float32, [None, 10])
 prediction = add_layer(xs,784,10,activation_function=tf.nn.softmax)
 
 # the error between prediction and real data
-cross_entropy = tf.reduce_mean(-tf.reduce_sum(ys * tf.log(prediction), reduction_indices=[1]))       # loss
+cross_entropy = tf.reduce_mean(-tf.reduce_sum(ys * tf.log(prediction), reduction_indices=[1])) # loss
 train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
 sess = tf.Session()
