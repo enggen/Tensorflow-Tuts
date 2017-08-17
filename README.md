@@ -1,3 +1,3 @@
 # Tensorflow-Tuts
-- Tensorflow tutorial beginner to advance
+- Tensorflow tutorials beginner to advance level
 - Real world examples 
